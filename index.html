@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+    <!--Form (biểu mẫu) giúp nhận và gửi dữ liệu lên server
+    VD: đăng ký, đăng nhập, khảo sát, ...
+Các thuộc tính trong form
+1. action: địa chỉ nơi nhận dữ liệu
+2. method: phương thức gửi dữ liệu
+   nếu ko có method form mặc định chọn phương thức get
+Phân biệt post và get:
+   - không nên gửi dữ liệu nhạy cảm bằng get
+   - get hạn chế số lượng ký tự đến 2048 khi gửi lên, post ko hạn chế số lượng
+   - get có cache, post ko có cache
+   3. enctype: cách mã hóa
+3. name: Lấy dữ liệu gửi lên server thông qua thuộc tính name
+4. id: định danh cho thẻ, mỗi thẻ chỉ có 1 id duy nhất
+
+   Các trường dữ liệu và các thẻ trong form
+1. label: khi có giá trị thuộc tính for trùng với id của input thì khi click vào label sẽ chọn ô input cần nhập
+2. input: ô nhập liệu
+3. type: loại dữ liệu nhập vào
+   - type="text": nhập dữ liệu dạng viết
+   - type="password": giá trị dữ liệu sẽ bị che đi
+   - type="radio": chọn ô cho trước, khi các ô cùng thuộc tính name thì chỉ dc chọn 1 fill. Nếu mặc định ko có name thì lấy giá trị của 
+   ô input đó luôn thì thêm thuộc tính checked
+    - type="checkox": có chọn nhiều giá tri
+    - type="file": có thể chọn tệp để gửi dữ liệu lên, mặc định là chọn 1 tệp, chọn nhiều tệp thì thêm thuộc tính multiple
+    - type="date": chọn ngày tháng năm
+    - type="month": chọn tháng
+    - type="email": yêu cầu nhập định dạng email
+    - type="number": chỉ cho phép nhập số
+    - type="range": tạo thanh trượt cho thẻ tiến trình
+    - type="color": chọn màu
+    Thuộc tính
+    - placeholder: gợi ý nhập dữ liệu    
+    -required: bắt buộc nhập
+    - autocomplete: tự động điền, mặc định bật, ko muốn gợi ý nhập autocomplete="off"
+    - submit: gửi dữ liệu lên server
+    - value: giá trị của ô input
+
+
+-->
+   
+    <br action="" method="post" enctype="">
+        <br action="">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="Mời bạn nhập tên"></br>
+            <label for="password">password</label>
+            <input type="password"id="password" name="password" required></br>
+            <input type="radio" name="test">A </br>
+            <input type="radio" name="test">B </br>
+            <input type="radio" name="test">C </br>
+            <input type="file" multiple name="file"></br>
+            <input type="date" ></br>
+            <input type="month" ></br>
+            <input type="number"></br>
+            <input type="range" ></br>
+            <input type="color" ></br>
+                       <textarea name="" cols="" rows=""></textarea></br>
+            <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                </select>
+                
+                <input type="submit">
+                
+        <button disabled>Gửi</button>
+        </form>
+    
+</body>
+</html>

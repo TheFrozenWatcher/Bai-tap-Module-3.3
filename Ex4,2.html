@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="width: 300px;">
+    <h1 style="background-color: rgb(0, 174, 255)">
+      <TEXT style="color: blue">ĐĂNG KÝ HỌC VIÊN</TEXT>
+    </h1>
+    <form action="" method="get" style="background-color: rgb(255, 253, 205)">
+      <label for="yourname">Họ và tên</label>
+      <input
+        type="text"
+        id="yourname"
+        name="yourname"
+        placeholder="Mời bạn nhập tên"
+        required
+      />
+      <br /><label for="dob">Ngày sinh</label>
+      <input type="date" id="dob" name="dob" />
+      <br /><label for="gender">Giới tính</label>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Nữ</label>
+      <br /><label for="address">Địa chỉ</label>
+      <textarea
+        height="400"
+        placeholder="Mời bạn nhập địa chỉ"
+        required></textarea>
+            <br /><label for="class">Lớp</label>
+      <select name="class" id="class">
+        <option>Lớp 1</option>
+        <option>Lớp 2</option>
+        <option>Lớp 3</option>
+      </select>
+
+      <br /><label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Mời bạn nhập email"
+        required
+      />
+      <br /><label for="tel">Số điện thoại</label>
+      <input
+        type="tel"
+        id="tel"
+        name="Phone"
+        placeholder="Mời bạn nhập số điện thoại"
+        required
+      />
+      <br /><button>Đăng ký</button><button type="reset">Nhập lại</button>
+    </form>
+  </div>
+  </body>
+</html>

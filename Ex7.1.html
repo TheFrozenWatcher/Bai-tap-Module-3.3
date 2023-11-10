@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin sản phẩm</title>
+  </head>
+  <body>
+    <form>
+      <h1>Thông tin sản phẩm</h1>
+      <br /><label for="productname">Tên sản phẩm</label>
+      <input type="text" id="productname" name="productname" />
+      <label for="productquantity">Số lượng</label>
+
+      <input
+        type="number"
+        id="productquantity"
+        name="productquantity"
+        min="1"
+      />
+
+      <h1>Thông tin giao hàng</h1>
+      <br /><label for="fullname">Họ và tên</label>
+      <input type="text" id="name" name="name" placeholder="" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="" required />
+      <br /><label for="tel">Số điện thoại</label>
+      <input type="tel" id="tel" name="tel" placeholder="" required />
+      <label for="address">Địa chỉ</label>
+      <textarea size="400" required></textarea>
+      <h1>Thông tin thanh toán</h1>
+      <label for="paymethod">Phương thức thanh toán</label>
+      <select>
+        <option value="">Thanh toán khi nhận hàng</option>
+        <option value="">Đặt cọc</option>
+        <option value="">Nợ đến cuối tháng</option>
+      </select>
+      <br /><button>Đặt hàng</button>
+    </form>
+  </body>
+</html>
